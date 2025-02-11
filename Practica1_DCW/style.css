@@ -1,0 +1,157 @@
+/*estilo general*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    line-height: 1.6;
+    background-color: #F0F4EF;
+}
+
+/*Selectores básicos*/
+h1{
+    color: #A83279;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 3px solid #A83279;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: #34495E;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #76D7C4;
+}
+
+section{
+    background-color: #E8E8E8;
+    pad: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(36, 37, 38);
+}
+
+span{
+    font-style: italic;
+    color: #34495E;
+}
+
+/*Selector de clase*/
+.destacado{
+    color: mediumslateblue;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(52, 73, 94);
+    border-radius: 4px;
+}
+
+#importante{
+    color: #E67E22;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #F4A261;
+    border-radius: 4px;
+}
+
+/*Selectores de combinadores*/
+.contenedor{
+    border: 1px solid #7FDBB6;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.contenedor p{
+    background-color: #76D7C4;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contenedor > p{
+    border: 2px solid #16A085;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/*Selectores de combinadores*/
+input{
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #7FDBB6;
+    border-radius: 4px;
+    width: 200px;
+}
+
+input[type="password"]{
+    background-color: #7FDBB6;
+    border-color: #125B50;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+a[target="_blank"]{
+    color: #8E44AD;
+    border-bottom: 2px solid #A83279;
+}
+
+a[version="1.0"]{
+    text-transform: uppercase;
+}
+
+/*Pseudoclases*/
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F9C74F;
+    color: #E67E22;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #E67E22;
+    color: #F9C74F;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgb(36, 37, 38);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+li:nth-child(odd){
+    background-color: #A83279;
+}
+
+/*Pseudoelementos*/
+.parrafo{
+    position:relative;
+    padding: 10px;
+    background-color: #16A085;
+    border-radius: 4px;
+}
+
+.parrafo::before{
+    content: "\1F31F ";
+    color: #34495E;
+    font-size: 1.2em;
+}
+
+.parrafo::after{
+    content: " \1F31F";
+    color: #F9C74F;
+    font-size: 1.2em;
+}
